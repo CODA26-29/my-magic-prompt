@@ -15,4 +15,5 @@ help_function () {
   echo "  clear : Efface l'écran"
   echo "  smtp : Envoie un e-mail via SMTP"
   echo "  open : Ouvre un fichier avec vim"
+  echo "  rps: Lance une partie de pierre feuille ciseaux en 3 points"
 }

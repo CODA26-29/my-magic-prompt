@@ -1,5 +1,5 @@
 #!/bin/bash
-source quit.sh
+source ./commands/quit.sh
 source ./commands/help.sh
 source ./commands/ls.sh
 source ./commands/rm.sh
@@ -16,6 +16,8 @@ source ./commands/passw.sh
 source ./commands/httpget.sh
 source ./commands/smtp.sh
 source ./commands/rps.sh
+
+source ./login.sh
 
 login="admin"
 password="admin"
@@ -53,20 +55,8 @@ cmd() {
   esac
 }
 
-login() {
-  echo -n "Login: "
-  read usr_login
-
-  echo -n "Password: "
-  read usr_passw
-
-  if [ "$usr_login" != "$login" ] || [ "$usr_passw" != "$password" ]; then
-    quit
-  fi
-}
-
 main() {
-  login
+  #login
 
   lineCount=1
   

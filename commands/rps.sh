@@ -19,19 +19,34 @@ rps_function() {
     echo "[ $p2 ] (r/p/s):"
     read -s p2_play
 
+    if [ $((RANDOM % 10)) -eq 0 ]; then
+      echo "SuperKitty est apparu pour $p1"
+      p1_play="SuperKitty"
+    fi
+
+    if [ $((RANDOM % 10)) -eq 0 ]; then
+      echo "SuperKitty est apparu pour $p2"
+      p2_play="SuperKitty"
+    fi
 
 
     if [ $p1_play == $p2_play ]; then
-      echo "Draw"
+      echo "Egalité"
+    elif [ "$p1_play" == "SuperKitty" ]; then
+      echo "$p1 gagne."
+      sp1=$((sp1 + 1))
+    elif [ "$p2_play" == "SuperKitty" ]; then
+      echo "$p2 gagne."
+      sp2=$((sp2 + 1))
     elif [ "$p1_play" == "r" -a "$p2_play" == "s" ] || [ "$p1_play" == "p" -a "$p2_play" == "r" ] || [ "$p1_play" == "s" -a "$p2_play" == "p" ]; then
-      echo "$p1 wins"
+      echo "$p1 gagne."
       sp1=$((sp1 + 1))
     else
-      echo "$p2 wins"
+      echo "$p2 gagne."
       sp2=$((sp2 + 1))
     fi
   done
-  echo "---- RESULTS ----"
+  echo "---- RESULTATS ----"
   echo "[$p1]: $sp1"
   echo "[$p2]: $sp2"
 }

@@ -16,4 +16,5 @@ help_function () {
   echo "  smtp : Envoie un e-mail via SMTP"
   echo "  open : Ouvre un fichier avec vim"
   echo "  rps: Lance une partie de pierre feuille ciseaux en 3 points"
+  echo "  joke: Fait une blague"
 }

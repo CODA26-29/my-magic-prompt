@@ -56,7 +56,9 @@ Une fois connecté, les commandes suivantes sont disponibles.
 | `httpget` | Télécharge le HTML d'une page et demande le nom du fichier de destination        |
 | `smtp`    | Permet d'envoyer un mail en demandant l'adresse, le sujet et le corps du message |
 | `open`    | Ouvre un fichier avec VIM, même si le fichier n'existe pas                       |
-| `quit`    | Quitte le prompt                                                                 |
+| `quit`    | Quitte le prompt                        |
+|  `calc`    | ...                                                            |
+|  `joke`    | Fait une blague nulle                                                         |
 
 
 ## Modification du mot de passe

@@ -16,6 +16,7 @@ source ./commands/httpget.sh
 source ./commands/smtp.sh
 source ./commands/rps.sh
 source ./commands/joke.sh
+source ./commands/calc.sh
 
 cmd() {
   cmd=$1
@@ -41,6 +42,7 @@ cmd() {
     smtp ) smtp_function;;
     rps ) rps_function;;
     joke ) joke_function;;
+    calc ) calc_function;;
     clear ) clear;;
     touch ) touch $argv;;
     * ) echo "Commande inconnue";;

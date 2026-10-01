@@ -2,9 +2,10 @@
 
 source ./login.sh
 source ./cmd.sh
+source .env
 
-login="admin"
-password="admin"
+login=$LOGIN
+password=$PASSWORD
 age="18"
 nom="P"
 prenom="Raph"

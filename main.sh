@@ -4,8 +4,8 @@ source ./login.sh
 source ./cmd.sh
 source .env
 
-login=$LOGIN
-password=$PASSWORD
+app_login=$APP_LOGIN
+app_password=$APP_PASSWORD
 age="18"
 nom="P"
 prenom="Raph"

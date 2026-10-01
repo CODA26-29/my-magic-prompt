@@ -1,3 +1,3 @@
 about_function() {
-  echo "Magic Prompt: une ligne de commande magique crée par Raphaël."
+  echo "My Magic Prompt: une ligne de commande magique écrite par Raphaël."
 }
